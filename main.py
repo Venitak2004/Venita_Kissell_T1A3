@@ -35,3 +35,12 @@ def main():
             if search_name in player:
                 print(player)
 
+#The user can print a full team list based on the team allocation.
+    elif selection == 3:
+        print("Print a Team list")
+        search_name = input("Enter Team name: ")
+        for player in players:
+            if search_name in player:
+                print(player)
+
+
