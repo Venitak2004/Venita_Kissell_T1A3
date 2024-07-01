@@ -26,3 +26,12 @@ def main():
         email = input("Enter Players contact email address: ")
 
         players.append([lname, fname, ffa_id, team, mobile, email])
+
+#The user can choose to search for a specific player by searching their last name.
+    elif selection == 2:
+        print("Find a Player")
+        search_name = input("Search for Player by last name: ")
+        for player in players:
+            if search_name in player:
+                print(player)
+
