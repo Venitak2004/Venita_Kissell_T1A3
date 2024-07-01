@@ -47,6 +47,15 @@ def main():
         print("Print full Player list")
         for player in players:
             print(player)
+#If the user no longer wants to use the application, then they can exit out.   
+    else:
+        selection == 5
+        print("Exiting program")
 
+print("Exit program")
+
+# This will call main.py to print.
+if __name__ == "__main__":
+    main()
 
 
