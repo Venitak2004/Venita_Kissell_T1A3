@@ -42,5 +42,11 @@ def main():
         for player in players:
             if search_name in player:
                 print(player)
+#The user can print a full player list of everyone in the database.
+    elif selection == 4:
+        print("Print full Player list")
+        for player in players:
+            print(player)
+
 
 
