@@ -1,33 +1,44 @@
 import json
 
 def load_players():
-    
     try:
         with open('players.json', 'r') as file:
-            return json.load(file)
+            data = json.load(file)
+        if isinstance(data, dict):
+            return data.get('players', [])
+        return data     
     except FileNotFoundError:
         print("The file players.json does not exist")
         return[]
 
     except json.JSONDecodeError:
         print("The file player.json contains invalid JSON:")
-        return[]
+        return[]    
         
 def save_players(players):
     with open('players.json', 'w') as file:
         json.dump(players, file)
 
 
-#def get_player_lname(last_name):
-#    players = load_players()
-#    for player in players:
-#        if player.get ['lname'] == last_name:
-#            return player
-#    return None
+def get_player_name(players, lname):
+    for player in players:
+        if player['lname'].lower() == lname.lower():
+            return player
+    return None
+
+def update_player(players, lname, ffa_id=None, team=None,):
+    for player in players:
+        if player['lname'].lower() == lname.lower():
+            if ffa_id is not None:
+                player['ffa_id'] = ffa_id
+            if team is not None:
+                player['team'] = team
+            return None
 
 def main():
+   
 
-#Setting up the list for all the stored data.
+#Setting up the list for all the stored data to load from the Json data file.
     players = load_players()
 #Setting up the variable to store the users input.
     selection = 0
@@ -62,14 +73,15 @@ def main():
 
 #The user can choose to search for a specific player by searching their last name.
         elif selection == 2:
-            print("Search for a Player by Last Name")
-            search_name = input("Enter Player Last Name: ")
-            d = json.data[search_name]
-            for player in players:
-                if search_name in players[0]: #finds the player by searching for last name in last name column.
-                    print(d)
-         
-            
+              print("Search for a player in the list")
+              search_name = input("Enter Player last name: ")
+              #create an empty list to store the extracted searched for data.
+              player_data = []
+              for item, val in enumerate(players):
+                  if item == len(players) - 1 and players[item + 1] == search_name:
+                      player_data.append(val)
+                      print("Extradted player")
+                               
 
 #The user can print a full team list based on the team allocation.
         elif selection == 3:
