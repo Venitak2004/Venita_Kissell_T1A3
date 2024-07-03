@@ -73,24 +73,30 @@ def update_player(players: List[Player]):
         player.mobile = mobile
         player.email = email
         print(f"Player details have been updated for {player}")
-        return
+        return(ffa_id_update)
     print("Player selection as not found!")
 
 def list_players(players: List[Player]):
     if players:
-      print("n\Total Player List")
+      print("Total Player List")
+      print(" ")
       for player in players:
         print(player)
     else:
        print("There are no players in this list. ")
 
 def find_player(players: List[Player]):
-    search_player = input("Enter player lname to find player: ")
-    for player in players:
-        if player.lname == search_player:
-            print(f"Player from search: {player}")
-            return
-    print("Player you are searching for is not in the list. ")
+    search_player = input("Enter player lname to find player: ").strip().lower()
+    found_players = [player for player in players if player.lname.lower() == search_player]
+
+    if found_players:
+            print(f"Players found with the last name: '{search_player}:")
+            for player in found_players:
+              print(player)
+        #if player.lname.lower() == search_player:  ##This code only returned one player from the search input, 
+            #print(f"Player from search: {player}") ##Changed to code to display multiple if any were there.
+    else:    
+           print("Player you are searching for is not in the list. ")
 
 def main():
    
@@ -98,15 +104,20 @@ def main():
     players = load_players(filename)
 
     while True:
-        print("n\Player Database System")
+        print("------------------------------------")
+        print("      Player Database System")
+        print("------------------------------------")
+        print(" ")
         print("1. Add a New Player")
         print("2. Update a Players Current Details")
         print("3. Full Player list")
         print("4. Search for a specific Player")
         print("5. Save and Exit Database")
         print("6. Exit without saving")
+        print(" ")
+        print("------------------------------------")
 
-        select = input("n\Enter your selection: ")
+        select = input("Enter your selection: ")
 
         if select == '1':
           add_players(players)
@@ -134,7 +145,7 @@ def main():
 
 #User input selections to loop through options to add player, find player, print a team list, print a full player list, and exit.
     #while selection != 5:
-    #    print("\nPlayer Database")
+    #    print("Player Database")
     #    print("1. Add a Player")
     #    print("2. Find a Player")
     #    print("3. Print a team list")
