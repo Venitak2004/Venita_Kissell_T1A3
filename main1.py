@@ -107,18 +107,18 @@ def main():
         print("------------------------------------")
         print("      Player Database System")
         print("------------------------------------")
-        print(" ")
+        print("  ")
         print("1. Add a New Player")
         print("2. Update a Players Current Details")
         print("3. Full Player list")
         print("4. Search for a specific Player")
         print("5. Save and Exit Database")
         print("6. Exit without saving")
-        print(" ")
+        print("  ")
         print("------------------------------------")
 
         select = input("Enter your selection: ")
-
+        print("   ")
         if select == '1':
           add_players(players)
         elif select == '2':
