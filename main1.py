@@ -50,7 +50,7 @@ def save_players(filename: str, players: List[Player]):
 def add_players(players: List[Player]):
     lname = input("Enter Players Last Name: ")
     fname = input("Enter Players First Name: ")
-    ffa_id = input("Enter Players unique FFA no: ")
+    ffa_id = input("Enter Players unique FFA Id no: ")
     team = input("Enter Player allocated team: ")
     mobile = input("Enter Players contact phone number: ")
     email = input("Enter Players contact email address: ")
@@ -59,22 +59,35 @@ def add_players(players: List[Player]):
     print(f"New player has been added: {new_player}")
 
 def update_player(players: List[Player]):
-    ffa_id_update = input("Enter players FFA ID no to update player details: ")
+    ffa_id_update = input("Enter players FFA ID number to update player details: ")
+    
+    #Find the player whos FFA Id number matches the selection.
+    found_player = None
     for player in players:
-        print(f"curret details of {player}")
+        if player.ffa_id == ffa_id_update:
+            found_player = player
+            break
+    if found_player:
+
+        print(f"Current details of {found_player.fname} {found_player.lname}")
+        print(found_player)
+
         lname = input(f"Change players last name: (current last name: {player.lname}): ") or player.lname
         fname = input(f"Change players first name: (current first name: {player.fname}): ") or player.fname
         team = input(f"Change players allocated team: (current team: {player.team}): ") or player.team
         mobile = input(f"Change players contact mobile number: {player.mobile}: ") or player.mobile
         email = input(f"Change players email address: {player.email}: ") or player.email
-        player.lname = lname
-        player.fname = fname
-        player.team = team
-        player.mobile = mobile
-        player.email = email
-        print(f"Player details have been updated for {player}")
-        return(ffa_id_update)
-    print("Player selection as not found!")
+        found_player.lname = lname
+        found_player.fname = fname
+        found_player.team = team
+        found_player.mobile = mobile
+        found_player.email = email
+        
+        print(f"Player details have been updated for {found_player.fname} {found_player.lname}")
+        
+    else:
+        print("Player not found!")
+
 
 def list_players(players: List[Player]):
     if players:
@@ -98,6 +111,21 @@ def find_player(players: List[Player]):
     else:    
            print("Player you are searching for is not in the list. ")
 
+def team_player(players: List[Player]):
+    search_player = input("Enter team name to output team list: ").strip().lower()
+    found_players = [player for player in players if player.team.lower() == search_player]
+
+    if found_players:
+            print(f"Players found with the team allication of: '{search_player}:")
+            for player in found_players:
+              print(player)
+        #if player.lname.lower() == search_player:  ##This code only returned one player from the search input, 
+            #print(f"Player from search: {player}") ##Changed to code to display multiple if any were there.
+    else:    
+           print("Player you are searching for is not in the list. ")
+
+
+
 def main():
    
     filename = 'players.csv'
@@ -112,30 +140,35 @@ def main():
         print("2. Update a Players Current Details")
         print("3. Full Player list")
         print("4. Search for a specific Player")
-        print("5. Save and Exit Database")
-        print("6. Exit without saving")
+        print("5. Generate a team list, select team name: ")
+        print("6. Save and Exit Database")
+        print("7. Exit without saving")
         print("  ")
         print("------------------------------------")
 
         select = input("Enter your selection: ")
-        print("   ")
+        print("  ")
+       
+        
         if select == '1':
           add_players(players)
         elif select == '2':
             update_player(players)
         elif select == '3':
             list_players(players)
-        elif select =='4':
+        elif select == '4':
             find_player(players)
         elif select == '5':
+            team_player(players)
+        elif select == '6':
             save_players(filename, players)
             print("Players details have been saved to the database.")
             break
-        elif select == '6':
+        elif select == '7':
             print("Caution you will exit without saving your files.")
             break
         else:
-            print("Invalid selection. Please select an option between 1 and 6")
+            print("Invalid selection. Please select an option between 1 and 7")
 
 
 #Setting up the list for all the stored data to load from the Json data file.

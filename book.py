@@ -13,7 +13,7 @@ def main():
         try:
             choice = int(input("Enter your choice: "))
         except ValueError:
-            print("Invalid input. Please enter a number between 10 and 4")
+            print("Invalid input. Please enter a number between 1 and 4")
             continue
 
         if choice == 1:
