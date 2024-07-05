@@ -25,7 +25,7 @@ def main():
         select = input("Enter your selection: ")
         print("  ")
 
-        if select == '1':
+        if select == '1':    #If the user selects 1, then access the add_player function usint the players variable to store the input data.
             add_players(players)
         elif select == '2':
             update_player(players)
