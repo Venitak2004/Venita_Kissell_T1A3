@@ -14,11 +14,11 @@ def main():
         print("  ")
         print("1. Add a New Player")
         print("2. Update a Players Current Details")
-        print("3. Full Player list")
-        print("4. Search for a specific Player")
-        print("5. Generate a team list, select team name: ")
+        print("3. Full Player List")
+        print("4. Search for a Specific Player")
+        print("5. Generate a Team List, Select Team Name ")
         print("6. Save")
-        print("7. Exit without saving")
+        print("7. Exit Without Saving")
         print("  ")
         print("------------------------------------")
 
@@ -34,6 +34,7 @@ def main():
         elif select == '4':
             find_player(players)
         elif select == '5':
+            print("Insert Team Name eg. U16FQ ")
             team_player(players)
         elif select == '6':
             save_players(filename, players)

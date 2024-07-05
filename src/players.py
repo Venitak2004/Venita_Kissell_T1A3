@@ -2,10 +2,12 @@ import csv
 import os
 from typing import List
 
+
 # Defining the Player Class
 
 class Player:
     def __init__(self, lname: str, fname: str, ffa_id: str, team: str, mobile: str, email: str):
+        
         self.lname = lname
         self.fname = fname
         self.ffa_id = ffa_id
@@ -17,6 +19,7 @@ class Player:
         return f"{self.lname}, {self.fname}, FFA_ID: {self.ffa_id}, Team: {self.team}, Mobile: {self.mobile}, Email: {self.email}"
 
 #Define the load_player class to store the data
+
 def load_players(filename: str) -> List[Player]:
     players = []
     if os.path.exists(filename):
