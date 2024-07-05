@@ -1,20 +1,27 @@
 # Venita_Kissell_T1A3
 ## R3
 Provide full attribution to referenced sources.
+```
 Cole, Anna. “Building a Python App Using Terminal - Python’s Gurus - Medium.” Medium, Python’s Gurus, Feb. 2024, medium.com/pythons-gurus/
-
+```
+```
 a-beginners-guide-on-how-to-build-a-simple-python-application-with-a-command-line-interface-6d7fb187789b. Accessed 5 July 2024.
-
+```
+```
 “Database Flowchart Symbols.” Https://Www.conceptdraw.com, www.conceptdraw.com/How-To-Guide/database-flowchart-symbols.
-
+```
+```
 Programiz. “Design Flowchart in Programming (with Examples) - Programiz.” Programiz.com, 2019, www.programiz.com/article/flowchart-programming.
-
+```
+```
 van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
-
+```
+```
 https://www.conceptdraw.com/How-To-Guide/database-flowchart-symbols
-
+```
+```
 ChatGPT for error handling
-
+```
 ## R4
 Provide link to GitHub Repository
 https://github.com/Venitak2004/Venita_Kissell_T1A3
