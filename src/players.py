@@ -95,7 +95,7 @@ def update_player(players: List[Player]):
         found_player.email = email
 
         print(
-            f"Player details have been updated for {found_player.fname} {found_player.lname}")
+            f"Player details have been updated for {found_player.fname} {found_player.lname}, to save your changes please select 6 from the menu.")
 #Error message for player not found in the list.
     else:
         print("Player not found!")

@@ -17,7 +17,7 @@ def main():
         print("3. Full Player list")
         print("4. Search for a specific Player")
         print("5. Generate a team list, select team name: ")
-        print("6. Save and Exit Database")
+        print("6. Save")
         print("7. Exit without saving")
         print("  ")
         print("------------------------------------")
@@ -38,7 +38,7 @@ def main():
         elif select == '6':
             save_players(filename, players)
             print("Players details have been saved to the database.")
-            break
+            #break
         elif select == '7':
             print("Caution you will exit without saving your files.")
             break
