@@ -111,3 +111,24 @@ Design help documentation - User Manual
 #### Any system/hardware requirements
 
 #### How to use any command line arguments made for the application
+Once you have opended the program you will see a menu for the Player Database System. You are a series of menu items to choose from.
+
+1. Add a New Player
+2. Update a Players Current Details
+3. Full Player List
+4. Search for a Specific Player
+5. Generate a Team List, Select Team Name
+6. Save
+7. Exit Without Saving
+
+1. Add a New Player
+   This selection will enable you to start processing a player into the database, please have the following details ready;
+
+   Player First Name
+   Player Last Name
+   Unique FFA id Number
+   Team Allocation
+   Phone Number
+   Email
+
+   You wil require all of these to insert into the database, they system will not allow blanks or a null entry in the inputing
