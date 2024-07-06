@@ -216,4 +216,4 @@ The program is telling you that it can not find the player, if you are certain t
 
 #### Menu Item 6 - Generate a Team List - Error Message
 "Team you are searching for is not in the list"
-The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and runa full player list. Once you have the players FFA_id number you can change their team allocation.
+The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and run full player list. Once you have the players FFA_id number you can change their team allocation.
