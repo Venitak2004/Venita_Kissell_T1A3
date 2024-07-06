@@ -120,15 +120,82 @@ Once you have opended the program you will see a menu for the Player Database Sy
 5. Generate a Team List, Select Team Name
 6. Save
 7. Exit Without Saving
+  
 
 1. Add a New Player
    This selection will enable you to start processing a player into the database, please have the following details ready;
 
    Player First Name
    Player Last Name
-   Unique FFA id Number
+   Unique FFA id Number (8 numbers)
    Team Allocation
    Phone Number
    Email
 
-   You wil require all of these to insert into the database, they system will not allow blanks or a null entry in the inputing
+   You will require all of the above information to insert into the database, so have them ready.
+   Select 1 and press enter.
+   The program will prompt you for each entry line to guide you on which line of information to enter.
+   Simply type the information you are prompted to type in, the hit enter.
+   Once you have completed all the fields you will be sent back to the main menu.
+
+2. Update a Players Current Details
+   This selection will enable you to update an existing player in the database.
+   To do this, firstly select menu item 4 and search the database for a specific players using their last name.
+   Once you have the players details on the screen, copy the players unique FFA_id number to access this menu function.
+   Once back at the main menu, you can now select option 2 from the menu,
+   Insert the copied unique FFA_id number into the terminal prompt and follow the prompts to make the changes.
+   
+   - Firstly you will be asked if you want to change the players first name, if you don't need to make changes to the first name then just press Enter.
+   - Then you will be asked if you want to change the players last name, same applies here, if you don't need to make any changes, just press enter to move to the next field.
+   - Next you will be asked if you want to change the players Team Allocation, same applies, if you don't need to make any changes, just enter to move to the next field.
+   - Then you will be asked if you want to change the players phone number, same applies, if you don't need to make any changes, just enter to move to the next field.
+   - Lastly you will be asked if you want to change the players email address, same applies, if you don't need to make any changes, just enter to move to the next field.
+   Once you have done all of these steps
+   Select Menu option 6 and Save your changes.
+   
+3. Full Player List
+   This menu option will give you a full list of players from the database, everything stored in the database is going to be printed to the display screen.
+   Simply select Menu option 3 and hit enter.
+   You will see on the display screen all players currently stored in the database.
+
+4. Search for a Specific Player
+   This menu option will search for a specific player.
+   Select menu item 5 and hit enter
+   The program will prompt you to input the players last name and hit enter.
+   You will see on the screen all player with the same last name will appear (this is usefull when you have more than one player with the same last name, but are all from the same family).
+   
+6. Generate a Team List
+   This menu option will give you a specific list of players in a specific team.
+   Select menu item 6 and hit enter
+   You will be prompted to input a team name, for example team name may be U16FQ.
+   Enter the team name and hit enter.
+   You will see on the screen all players allocated to the team you input in the search field.
+ 
+
+8. Save
+   This menu option will save all changes you have made to the player files.
+   Simply select 6 from the menu and hit enter
+   You will be notified that your files have been saved.
+
+9. Exit with No Save
+   This menu option will exit the program completely and not save your changes.
+   When you want to exit the program make sure you have first saved your changes by selecting menu item 6 and hit enter.
+   Then you can select menu item 7 and hit enter.
+   This will close the program.
+
+Error Handling
+Menu Item 2 - Update Player - Error Message
+"Player not found"
+The program is telling you that the player you are searching for is not in the database, either select menu option 2 and search for the player by their last name, or select menu option 3 and run a full player list, and get the correct FFA_id number, and try again.
+
+Menu Item 3 - Full Team List - Error Message
+"There are no players in this list"
+The program is telling you that there are no players in the database, so you will need to enter players details to populate the database.
+
+Menu Item 4 - Search a Specific Player - Error Message
+"Player not found"
+The program is telling you that it can not find the player, if you are certain the player is in the database, run menu option 3 and run a full player list check the player details, there may be a spelling error in the last name.
+
+Menu Item 6 - Generate a Team List - Error Message
+"Team you are searching for is not in the list"
+The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and runa full player list. Once you have the players FFA_id number you can change their team allocation.
