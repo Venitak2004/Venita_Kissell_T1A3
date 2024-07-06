@@ -41,7 +41,11 @@ With naming conventions function names should be lowercase as are Variables, but
 ```
 Reference - 
 van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
+
 ```
+
+Python Rich 
+A library for rendering and formatting text outputs and visualisation in the terminal window. It supports features that make the terminal window interface more visually appealing with enhanced aesthetics, it supports bold, italics, underline, and strike through text, enhanced colours.
 ## R6
 # Player Database
 Developing a player database for a sports club involves defining features that will support the clubs various aspects and requirements, this application has been designed for player data storage, specifically to keep all player data in one database.

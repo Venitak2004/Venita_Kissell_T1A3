@@ -2,12 +2,11 @@ import csv
 import os
 from typing import List
 
-
 # Defining the Player Class
 
 class Player:
     def __init__(self, lname: str, fname: str, ffa_id: str, team: str, mobile: str, email: str):
-        
+
         self.lname = lname
         self.fname = fname
         self.ffa_id = ffa_id
@@ -18,7 +17,7 @@ class Player:
     def __str__(self):
         return f"{self.lname}, {self.fname}, FFA_ID: {self.ffa_id}, Team: {self.team}, Mobile: {self.mobile}, Email: {self.email}"
 
-#Define the load_player class to store the data
+#Define the load_player function to store the data
 
 def load_players(filename: str) -> List[Player]:
     players = []
@@ -70,25 +69,26 @@ def update_player(players: List[Player]):
     ffa_id_update = input(
         "Enter players FFA ID number to update player details or hit enter to go back to menu: ")
 
-# Find the player whos FFA Id number matches the selection loop through until user input last name is found
+# Find the player unique FFA Id number that matches the user input and loop through until user input last name is found
     found_player = None
     for player in players:
         if player.ffa_id == ffa_id_update:
             found_player = player
             break
     if found_player:
-#Print to screen the following prompts to change details for found player.
+
+#Print to screen the following prompts to change details for found player to update csv file.
         print(f"Current details of {found_player.fname} {found_player.lname}")
         print(found_player)
 
         lname = input(
             f"Change players last name or hit enter to skip to next option: (current last name: {player.lname}): ") or player.lname
         fname = input(
-            f"Change players first name: (current first name: {player.fname}): ") or player.fname
+            f"Change players first name or hit enter: (current first name: {player.fname}): ") or player.fname
         team = input(
-            f"Change players allocated team: (current team: {player.team}): ") or player.team
+            f"Change players allocated team or hit enter: (current team: {player.team}): ") or player.team
         mobile = input(
-            f"Change players contact mobile number: {player.mobile}: ") or player.mobile
+            f"Change players contact mobile number or hit enter: {player.mobile}: ") or player.mobile
         email = input(
             f"Change players email address: {player.email}: ") or player.email
         found_player.lname = lname
@@ -106,7 +106,7 @@ def update_player(players: List[Player]):
 #Define the function for displaying a full list of players in the csv file database.
 def list_players(players: List[Player]):
     if players:
-        print("Total Player List")
+        print("Complete Player List")
         print(" ")
         for player in players:
             print(player)
@@ -114,10 +114,10 @@ def list_players(players: List[Player]):
  #Error message for no players in the list.       
         print("There are no players in this list. ")
 
-
+#Define the function to find a specific player by their last name.
 def find_player(players: List[Player]):
     search_player = input(
-        "Enter player lname to find player: ").strip().lower()
+        "Enter player last name to find specific player: ").strip().lower()
     found_players = [
         player for player in players if player.lname.lower() == search_player]
 
