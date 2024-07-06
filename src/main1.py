@@ -1,5 +1,9 @@
+
+from rich.console import Console
 from players import load_players, save_players, add_players, update_player, list_players, find_player, team_player
 
+#Initialise
+console = Console()
 
 
 def main():
@@ -8,9 +12,9 @@ def main():
     players = load_players(filename)
 
     while True:
-        print("------------------------------------")
-        print("      Player Database System")
-        print("------------------------------------")
+        console.print(" [bold blue]------------------------------------[/bold blue]")
+        console.print("  [bold cyan]     Player Database System [/bold cyan]")
+        console.print(" [bold blue]------------------------------------[/bold blue]")
         print("  ")
         print("1. Add a New Player")
         print("2. Update a Players Current Details")
@@ -18,11 +22,11 @@ def main():
         print("4. Search for a Specific Player")
         print("5. Generate a Team List, Select Team Name ")
         print("6. Save")
-        print("7. Exit Without Saving")
+        console.print("[bold red]7. Exit Without Saving[/bold red]")
         print("  ")
-        print("------------------------------------")
+        console.print(" [bold blue]------------------------------------[/bold blue]")
 
-        select = input("Enter your selection: ")
+        select = console.input("[bold yellow]Enter your selection: [/bold yellow]")
         print("  ")
 
         if select == '1':    #If the user selects 1, then access the add_player function usint the players variable to store the input data.
@@ -41,7 +45,7 @@ def main():
             print("Players details have been saved to the database.")
             #break
         elif select == '7':
-            print("Caution you will exit without saving your files.")
+            print("You have exited without saving your files.")
             break
         else:
             print("Invalid selection. Please select an option between 1 and 7")

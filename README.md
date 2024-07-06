@@ -44,7 +44,7 @@ van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.pyth
 ```
 ## R6
 # Player Database
-Developing a player database for a sports club involves defining features that will support the clubs various aspects and requirements, this app has been designed for player data storage specifically to keep all player data in one database.
+Developing a player database for a sports club involves defining features that will support the clubs various aspects and requirements, this application has been designed for player data storage, specifically to keep all player data in one database.
 The Player Database is designed to be a simple tool for managing player information. It is designed to be easy to use and can be customised to suit clubs needs for the storage of player data.
 Player Data Input
 - Input and store basic data for each player, first name, last name, unique FFA_id number, team allocation, mobile number, and email address.
