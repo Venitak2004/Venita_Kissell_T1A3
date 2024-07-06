@@ -65,11 +65,7 @@ def add_players(players: List[Player]):
         new_player = Player(lname, fname, ffa_id, team, mobile, email)
         players.append(new_player)
         print(f"New player has been added: {new_player}")
-
-#Validate inputs
-        if not lname or not fname or not ffa_id or not team or not mobile or not email:
-            print("All fields must be completed. Please try again.")
-            continue
+        
 
 #Define update_player function to search the csv list file and locate the player from the list and loop through to update details.
 def update_player(players: List[Player]):
