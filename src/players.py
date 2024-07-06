@@ -6,7 +6,8 @@ from typing import List
 
 class Player:
     def __init__(self, lname: str, fname: str, ffa_id: str, team: str, mobile: str, email: str):
-
+        #if not lname or not fname or not ffa_id or not team or not mobile or not email:
+            #raise ValueError("All fields must have an entry. ")
         self.lname = lname
         self.fname = fname
         self.ffa_id = ffa_id
@@ -54,15 +55,21 @@ def save_players(filename: str, players: List[Player]):
 
 #Define the add_player function to add new players to the csv file and write to the file
 def add_players(players: List[Player]):
-    lname = input("Enter Players Last Name: ")
-    fname = input("Enter Players First Name: ")
-    ffa_id = input("Enter Players unique FFA Id no (must be 8 numbers): ")
-    team = input("Enter Player allocated team: ")
-    mobile = input("Enter Players contact phone number: ")
-    email = input("Enter Players contact email address: ")
-    new_player = Player(lname, fname, ffa_id, team, mobile, email)
-    players.append(new_player)
-    print(f"New player has been added: {new_player}")
+    while True:
+        lname = input("Enter Players Last Name: ")
+        fname = input("Enter Players First Name: ")
+        ffa_id = input("Enter Players unique FFA Id no (must be 8 numbers): ")
+        team = input("Enter Player allocated team: ")
+        mobile = input("Enter Players contact phone number: ")
+        email = input("Enter Players contact email address: ")
+        new_player = Player(lname, fname, ffa_id, team, mobile, email)
+        players.append(new_player)
+        print(f"New player has been added: {new_player}")
+
+#Validate inputs
+        if not lname or not fname or not ffa_id or not team or not mobile or not email:
+            print("All fields must be completed. Please try again.")
+            continue
 
 #Define update_player function to search the csv list file and locate the player from the list and loop through to update details.
 def update_player(players: List[Player]):
