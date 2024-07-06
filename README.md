@@ -122,6 +122,7 @@ Design help documentation - User Manual
 
 #### How to use any command line arguments made for the application
 
+
 Once you have opened the program you will see a menu for the Player Database System. You have series of menu items to choose from.
 ```
 ----------------------------------
@@ -178,7 +179,7 @@ Enter your selection:
    This menu option will search for a specific player.
    Select menu item 5 and hit enter
    The program will prompt you to input the players last name and hit enter.
-   You will see on the screen all player with the same last name will appear (this is usefull when you have more than one player with the same last name, but are all from the same family).
+   You will see on the screen all player with the same last name will appear (this is useful when you have more than one player with the same last name, but are all from the same family).
    
 #### 5. Generate a Team List
    This menu option will give you a specific list of players in a specific team.
@@ -217,3 +218,4 @@ The program is telling you that it can not find the player, if you are certain t
 #### Menu Item 6 - Generate a Team List - Error Message
 "Team you are searching for is not in the list"
 The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and run full player list. Once you have the players FFA_id number you can change their team allocation.
+
