@@ -19,4 +19,4 @@ def find_player(players: List[Player]):
 # print(f"Player from search: {player}") ##Changed to code to display multiple if any were there.
     else:
 #Error message if searched player is not in the csv file.
-        print("Player you are searching for is not in the list. ")
+        print("Player you are searching for is not in the list. Check the spelling and try again. ")

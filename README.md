@@ -6,66 +6,13 @@
 
 
 
-## R3
-Provide full attribution to referenced sources.
-```
-Cole, Anna. “Building a Python App Using Terminal - Python’s Gurus - Medium.” Medium, Python’s Gurus, Feb. 2024, medium.com/pythons-gurus/
-```
-```
-a-beginners-guide-on-how-to-build-a-simple-python-application-with-a-command-line-interface-6d7fb187789b. Accessed 5 July 2024.
-```
-```
-“Database Flowchart Symbols.” Https://Www.conceptdraw.com, www.conceptdraw.com/How-To-Guide/database-flowchart-symbols.
-```
-```
-Programiz. “Design Flowchart in Programming (with Examples) - Programiz.” Programiz.com, 2019, www.programiz.com/article/flowchart-programming.
-```
-```
-van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
-```
-```
-https://www.conceptdraw.com/How-To-Guide/database-flowchart-symbols
-```
-```
-“System Requirements.” Graphisoft, graphisoft.com/resources-and-support/system-requirements.
-```
-
-```
-ChatGPT for error handling
-```
-## R4
+## GitHub Repository
 Provide link to GitHub Repository
 https://github.com/Venitak2004/Venita_Kissell_T1A3
 
+![GitHub Respository](/docs/github_repository.png)
 
 
-## R5
-### Pep 8
-Is the Python style guide for writing code I has a set of guidelines that help to improve readability and consistency. 
-For example use 4 spaces when indenting, never use TABS.
-Maximum line lengths of characters is 79 characters. 
-When importing files they should be listed on separate lines and not combined on the same line. 
-Imports have a hierarchy and should be imported in the following order standard library imports/related third-party imports/local application imports. 
-The use of blank lines and space to make code easier to read.
-However large amounts of white space is to be avoided. 
-Comments should be complete sentences so it is easier for others to read your code better.
-With naming conventions function names should be lowercase as are Variables, but Classes begin with a capital letter.
-'Single Quotes' for small strings, and "Double Quotes" for strings that contain 'quotes'
-'self' is always the first argument.
-```
-Reference - 
-van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
-
-```
-
-### Python Rich 
-A library for rendering and formatting text outputs and visualisation in the terminal window. It supports features that make the terminal window interface more visually appealing with enhanced aesthetics, it supports bold, italics, underline, and strike through text, enhanced colours and more.
-
-```
-Python, Real. “The Python Rich Package: Unleash the Power of Console Text – Real Python.” Realpython.com, realpython.com/python-rich-package/.
-```
-
-## R6
 ### Player Database
 Developing a player database for a sports club involves defining features that will support the clubs various aspects and requirements, this application has been designed for player data storage, specifically to keep all player data in one database..
 The Player Database is designed to be a simple tool for managing player information. It is designed to be easy to use and can be customised to suit clubs needs for the storage of player data.
@@ -281,23 +228,23 @@ Once all the above steps have been installed and implemented, you can run the ex
 
 Once you have opened the program you will see a menu for the Player Database System. You have series of menu items to choose from.
 
-```
-----------------------------------
-     Player Database System
-----------------------------------
-1. Add a New Player
-2. Update a Players Current Details
-3. Full Player List
-4. Search for a Specific Player
-5. Generate a Team List, Select Team Name
-6. Save
-7. Exit Without Saving
------------------------------------
-Enter your selection: 
-```
+![Main Menu](/docs/main-menu.png)
+
+This program application has the following features;
+
+   - Add a New Player
+   - Update a Players Current Details
+   - Full Player List
+   - Search for a Specific Player
+   - Generate a Team List
+   - Save
+   - Exit Without Saving
+
 
 #### 1. Add a New Player
    This selection will enable you to start processing a player into the database, please have the following details ready;
+
+   ![New Player](/docs/new_player.png)
 
    Player First Name
    Player Last Name
@@ -313,6 +260,9 @@ Enter your selection:
    Once you have completed all the fields you will be sent back to the main menu.
 
 #### 2. Update a Players Current Details
+
+   ![Update Player](/docs/update_player.png)
+
    This selection will enable you to update an existing player in the database.
    To do this, firstly select menu item 4 and search the database for a specific players using their last name.
    Once you have the players details on the screen, copy the players unique FFA_id number to access this menu function.
@@ -328,17 +278,26 @@ Enter your selection:
    Select Menu option 6 and Save your changes.
    
 #### 3. Full Player List
+
+   ![Full Player List](/docs/full_player_list.png2)
+
    This menu option will give you a full list of players from the database, everything stored in the database is going to be printed to the display screen.
    Simply select Menu option 3 and hit enter.
    You will see on the display screen all players currently stored in the database.
 
 #### 4. Search for a Specific Player
+
+   ![Search Player](/docs/new_player.png)
+   
    This menu option will search for a specific player.
    Select menu item 5 and hit enter
    The program will prompt you to input the players last name and hit enter.
    You will see on the screen all player with the same last name will appear (this is useful when you have more than one player with the same last name, but are all from the same family).
    
 #### 5. Generate a Team List
+   
+   ![Generate Team List](/docs/generate_team_list.png)
+   
    This menu option will give you a specific list of players in a specific team.
    Select menu item 6 and hit enter
    You will be prompted to input a team name, for example team name may be U16FQ.
@@ -347,11 +306,17 @@ Enter your selection:
  
 
 #### 6. Save
+
+   ![Save](/docs/Save.png)
+
    This menu option will save all changes you have made to the player files.
    Simply select 6 from the menu and hit enter
    You will be notified that your files have been saved.
 
 #### 7. Exit with No Save
+
+   ![Exit](/docs/Exit_no_save.png)
+
    This menu option will exit the program completely and not save your changes.
    When you want to exit the program make sure you have first saved your changes by selecting menu item 6 and hit enter.
    Then you can select menu item 7 and hit enter.
@@ -361,6 +326,9 @@ Enter your selection:
 ## Error Handling
 
 #### Menu Item 2 - Update Player - Error Message
+
+   ![Error Update Player](/docs/Error_update_player_not_found.png) 
+
 "Player not found"
 The program is telling you that the player you are searching for is not in the database, either select menu option 2 and search for the player by their last name, or select menu option 3 and run a full player list, and get the correct FFA_id number, and try again.
 
@@ -369,13 +337,80 @@ The program is telling you that the player you are searching for is not in the d
 The program is telling you that there are no players in the database, so you will need to enter players details to populate the database.
 
 #### Menu Item 4 - Search a Specific Player - Error Message
-"Player not found"
+
+![Error Player Not Found](/docs/Error_player_not_found.png)
+
+"Player you are looking for is not in the list."
 The program is telling you that it can not find the player, if you are certain the player is in the database, run menu option 3 and run a full player list check the player details, there may be a spelling error in the last name.
 
 #### Menu Item 6 - Generate a Team List - Error Message
+
+ ![Error Team List](/docs/error_team_list.png)
+
 "Team you are searching for is not in the list"
 The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and run full player list. Once you have the players FFA_id number you can change their team allocation.
 
-Algorithmic Walk through Trello Board
+### Algorithmic Walk through - Flow chart
 
-![trello_board]()
+ ![Flow Chart](/docs/flowchart_playerdatabase.png)
+
+### Project Management Platform (Implementation Plan)
+![trello_board](/docs/R7_trello_board.png)
+![trello card 1](/docs/trello_board_eg1.png)
+![trello card 2](/docs/trello_board_eg2.png)
+
+
+
+### Pep8
+Is the Python style guide for writing code I has a set of guidelines that help to improve readability and consistency. 
+For example use 4 spaces when indenting, never use TABS.
+Maximum line lengths of characters is 79 characters. 
+When importing files they should be listed on separate lines and not combined on the same line. 
+Imports have a hierarchy and should be imported in the following order standard library imports/related third-party imports/local application imports. 
+The use of blank lines and space to make code easier to read.
+However large amounts of white space is to be avoided. 
+Comments should be complete sentences so it is easier for others to read your code better.
+With naming conventions function names should be lowercase as are Variables, but Classes begin with a capital letter.
+'Single Quotes' for small strings, and "Double Quotes" for strings that contain 'quotes'
+'self' is always the first argument.
+```
+Reference - 
+van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
+
+```
+
+### Python Rich 
+A library for rendering and formatting text outputs and visualisation in the terminal window. It supports features that make the terminal window interface more visually appealing with enhanced aesthetics, it supports bold, italics, underline, and strike through text, enhanced colours and more.
+
+```
+Python, Real. “The Python Rich Package: Unleash the Power of Console Text – Real Python.” Realpython.com, realpython.com/python-rich-package/.
+```
+
+
+### References 
+Provide full attribution to referenced sources.
+```
+Cole, Anna. “Building a Python App Using Terminal - Python’s Gurus - Medium.” Medium, Python’s Gurus, Feb. 2024, medium.com/pythons-gurus/
+```
+```
+a-beginners-guide-on-how-to-build-a-simple-python-application-with-a-command-line-interface-6d7fb187789b. Accessed 5 July 2024.
+```
+```
+“Database Flowchart Symbols.” Https://Www.conceptdraw.com, www.conceptdraw.com/How-To-Guide/database-flowchart-symbols.
+```
+```
+Programiz. “Design Flowchart in Programming (with Examples) - Programiz.” Programiz.com, 2019, www.programiz.com/article/flowchart-programming.
+```
+```
+van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
+```
+```
+https://www.conceptdraw.com/How-To-Guide/database-flowchart-symbols
+```
+```
+“System Requirements.” Graphisoft, graphisoft.com/resources-and-support/system-requirements.
+```
+
+```
+ChatGPT for error handling
+```
