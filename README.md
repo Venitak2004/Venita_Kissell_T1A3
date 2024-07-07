@@ -1,4 +1,11 @@
-# Venita_Kissell_T1A3
+# Player Database - Venita_Kissell_T1A3
+## R4 Link to Source Control Repository & Screenshot
+
+![autopep8](/docs/autopep8.png)
+
+
+
+
 ## R3
 Provide full attribution to referenced sources.
 ```
@@ -25,6 +32,8 @@ ChatGPT for error handling
 ## R4
 Provide link to GitHub Repository
 https://github.com/Venitak2004/Venita_Kissell_T1A3
+
+
 
 ## R5
 ### Pep 8

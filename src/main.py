@@ -1,6 +1,10 @@
 
 from rich.console import Console
-from players import load_players, save_players, add_players, update_player, list_players, find_player, team_player
+
+from package1 import load_players, save_players, add_players, list_players, Player
+from package2 import update_player
+from package3 import find_player, team_player
+#from players import load_players, save_players, add_players, update_player, list_players, find_player, team_player
 
 #Initialise
 console = Console()
@@ -18,13 +22,13 @@ def main():
         console.print("  [bold cyan]     Player Database System [/bold cyan]")
         console.print(" [bold blue]------------------------------------[/bold blue]")
         print("  ")
-        print("1. Add a New Player")
-        print("2. Update a Players Current Details")
-        print("3. Full Player List")
-        print("4. Search for a Specific Player")
-        print("5. Generate a Team List, Select Team Name ")
-        print("6. Save")
-        console.print("[bold red]7. Exit Without Saving[/bold red]")
+        console.print("[purple]1. Add a New Player[/purple]")
+        console.print("[cyan]2. Update a Players Current Details[/cyan]")
+        console.print("[green]3. Full Player List[/green]")
+        console.print("[cyan]4. Search for a Specific Player[/cyan]")
+        console.print("[green]5. Generate a Team List[/green]")
+        console.print("[bold magenta]6. Save[/bold magenta]")
+        console.print("[red]7. Exit Without Saving[/red]")
         print("  ")
         console.print(" [bold blue]------------------------------------[/bold blue]")
 
@@ -51,7 +55,6 @@ def main():
             break
         else:                #Error Handling for acceptable values.
             print("Invalid selection. Please select an option between 1 and 7")
-
 
 
 
