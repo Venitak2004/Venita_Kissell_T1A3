@@ -34,16 +34,16 @@ To enable this feature the list_player function was created to store the date in
 #### Search for a Specific Player
 - This function was designed for easier search function, for example if you didn't know the players stored ffa_id number and you needed to make a change to their stored phone number, the User can input the last name of the player they want to make changes to, and search the database, the search will return the player with the last name that matches the user input. It will also return multiple names if there are multiple matches. This is not an error, and is useful in the instance of families at a sporting club that have more than one child at the club, and the search needs to be able to return all siblings in the search parameter. The list_player function has been created to store the objects in the variable and while true, loop through each attribute and iterate each instance and print to terminal each player that matches the criteria.
 
-### Generate Specific Team List
+#### Generate Specific Team List
 - This function was designed to give the user the ability to specify a specific team for eg. U16FQ, this will generate for the user a complete list of all players that have been allocated to a certain team, hence returning a complete list of team players. The user at the prompt enters for example U16FQ in the input line and the app will loop through and generate a list with all players matching U16FQ. The find_player function was created and the variable stores the object of the users specific entry, this then for loops through the attributes while true, and iterates each line and prints to the terminal each player that matches the criteria.
 
-### Save
+#### Save
 - Save function was designed to save all changes before exiting the app, just another failsafe to protect the data and the changes. The save_player function was designed to store the objects in the variable until the function is activated. Then it is appended to the csv file.
 
-### Exit without Saving
+#### Exit without Saving
 - Exit without saving is a failsafe to ensure data integrity, if an error has been made, the user can exit out of the app, and not save any of the changes. This function breaks out of the program entirely.
 
-### Error Handling
+#### Error Handling
 Error handling has been installed in every feature, in actively prompts the user to either
 - select a valid number
 - check for spelling errors
@@ -60,36 +60,31 @@ The initial display has been spaced out for better aesthetics and readability, t
  - Save - The save function will save changes made to player files.
  - Exit Without Saving - in the event the user has made a change and doesn't want to store it in the player file they can exit without saving.
 
-### Features
-The initial display has been spaced out for better aesthetics and readability, the design has been enhanced with Rich formatting to clearer display the options of the simple but useful features. The user interface prompts the user to make a selection from the list of available options.
- - Add a Player - will add a new player to the database and save their details in a csv file.
- - Update a Player - will update the existing details already stored in the csv file, but will append the new data to the existing players data.
- - Full Player List - will give you every player listed in the entire database.
- - Search for a Specific Player - will prompt the user to input a players last name to search the system for a specific player, the system will return either one player or in the case of families, then multiple players, if the player is not in the database, the it will return an error message asking the user to check the spelling as player not found.
- - Generate a Team List - this will generate a team specific list for the user, they just need to put in the team name, for example U16FQ this will give the user an output of all the players listed in the database with U16FQ as the team they are allocated into, generating a full list of players for that team only.
- - Save - The save function will save changes made to player files.
- - Exit Without Saving - in the event the user has made a change and doesn't want to store it in the player file they can exit without saving.
 
-
-## R8
+## Design Help Documentation
 Design help documentation - User Manual
 
 ### Steps to Install Application
 This installation manual will help guide you throught the installation process.
 
-### System Requirements/Hardware Requirements
+#### System Requirements/Hardware Requirements
 All operating systems and harware requirements below will operate with the program application. Some programs have more complex requirements, but this application doesn't require alot of RAM storage or fast CPU.
 
 ##### Operating System
 You can use either of the following operating systems macOS/Windows/Linux
+
 ##### Storage
 It is recommended you have a minium of 2GB of storage, to install Python/Virtual Environment/Player Database/CSV File.
+
 ##### RAM (Memory)
 We recommend about 8GB RAM (Graphisoft.com 2024)
+
 ##### CPU processor
 Any modern computer contains sufficient operating systems.
+
 ##### Internet Connection
 You will need to have a stable internet connection when download and installing python and pip packages, Visual Studio Code and or associated libraries. 
+
 ##### Dependencies
 Rich
 
@@ -279,7 +274,7 @@ This program application has the following features;
    
 #### 3. Full Player List
 
-   ![Full Player List](/docs/full_player_list.png2)
+   ![Full Player List](/docs/full_player_list.png)
 
    This menu option will give you a full list of players from the database, everything stored in the database is going to be printed to the display screen.
    Simply select Menu option 3 and hit enter.
