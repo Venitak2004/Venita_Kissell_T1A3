@@ -27,6 +27,10 @@ van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.pyth
 https://www.conceptdraw.com/How-To-Guide/database-flowchart-symbols
 ```
 ```
+“System Requirements.” Graphisoft, graphisoft.com/resources-and-support/system-requirements.
+```
+
+```
 ChatGPT for error handling
 ```
 ## R4
@@ -123,16 +127,160 @@ The initial display has been spaced out for better aesthetics and readability, t
 ## R8
 Design help documentation - User Manual
 
-#### Steps to Install Application
+### Steps to Install Application
+This installation manual will help guide you throught the installation process.
 
-#### Any Dependencies require by the application to operate
+### System Requirements/Hardware Requirements
+All operating systems and harware requirements below will operate with the program application. Some programs have more complex requirements, but this application doesn't require alot of RAM storage or fast CPU.
 
-#### Any system/hardware requirements
+##### Operating System
+You can use either of the following operating systems macOS/Windows/Linux
+##### Storage
+It is recommended you have a minium of 2GB of storage, to install Python/Virtual Environment/Player Database/CSV File.
+##### RAM (Memory)
+We recommend about 8GB RAM (Graphisoft.com 2024)
+##### CPU processor
+Any modern computer contains sufficient operating systems.
+##### Internet Connection
+You will need to have a stable internet connection when download and installing python and pip packages, Visual Studio Code and or associated libraries. 
+##### Dependencies
+Rich
 
-#### How to use any command line arguments made for the application
+#### Installation Steps to Run Player Database Terminal Application
 
+Step 1 - Python
+Python is an essential download to run this Player Database program. To do this go to https://www.python.org/downloads/ and follow the download instructions from their website.
+![python](/docs/python_install.png)
+
+Step 2 - Install Visual Studio Code
+Visual Studio Code is a text editor and is essential to run this program. Download and istall from the provided link below.
+https://code.visualstudio.com/download
+![visual_studio_code](/docs/visual_studio.png)
+
+Step 3 - Install pip
+Pip is another essential program required to run the Player Database. Follow the link below and follow the download prompts to install.
+
+https://pypi.org/project/pip/
+
+![pip](/docs/pip.png)
+
+First you can check if you already have pip installed by typing into the terminal prompt, see below;
+
+##### for Linux:- 
+###### Update package -
+```
+sudo apt update
+```
+###### Install Pip-
+```
+sudo apt install python3-pip
+```
+###### Verify your installation-
+```
+pip3 --version
+```
+
+##### for MacOS
+Open a terminal prompt
+###### Install pip
+```
+python3 -m ensurepip
+```
+##### Verify your installation-
+```
+pip3 --version
+```
+
+Step 4 - Extract the zip file
+If you have followed the neccessary steps above, then your next step is to download the Player_Database from GitHub to do this click this link (https://github.com/Venitak2004/Venita_Kissell_T1A3) to access the terminal application program.
+
+4.1 Open the terminal window, and check that you are currently in the working directory. In the terminal window type in;
+```
+pwd
+```
+
+4.2 You need to be in the {Venita_Kissell_T1A3} directory to do this type the following into the terminal window;
+```
+cd {Venita_Kissell_T1A3}
+```
+
+4.3 Once in the {Venita_Kissell_T1A3} directory then you need to change directory into the src file, to do this type the following into the terminal window;
+```
+cd src
+```
+
+##### Creating a Virtual Environment
+
+Now that you are in the correct folder, you need to create a virtual environment, this will isolate the application and its dependicies. To this type into the terminal window as follows;
+
+###### For Linux
+-To install virtual environment; (note: you may need to put sudo before pip)
+```
+pip install vitualenv
+```
+
+-To create virtual environment
+```
+python3 -m <venv_name>
+```
+
+-To activiate the virtual environment
+```
+source venv/bin/activate
+```
+
+-To Deactivate once finished using the application
+```
+deactivate
+```
+
+###### For MacOs
+Open the terminal window 
+
+-To install virtual environment; (note: you may need to put sudo before pip)
+```
+sudo pip install vitualenv
+```
+
+-To create virtual environment
+```
+virtualenv venv
+```
+
+-To activiate the virtual environment
+```
+source venv/bin/activate
+```
+
+-To Deactivate once finished using the application
+```
+deactivate
+```
+Step 5 - Install required dependencies file (requirement.txt)
+The requirements.txt file inside the src folder will need to be installed to utilise the functions.
+- Rich
+5.1 Installing the requirements.txt file.
+In the terminal window, type the following;
+```
+pip install -r requirements.txt
+```
+
+5.2 - Starting the Player_Database application
+In the terminal window, type the following;
+```
+python3 main.py
+```
+
+Once all the above steps have been installed and implemented, you can run the executable file. In the terminal window type the following;
+```
+./player_database.sh
+
+```
+
+##### Overview of the Player_Database features and functions and how to utilise them.
 
 Once you have opened the program you will see a menu for the Player Database System. You have series of menu items to choose from.
+
 ```
 ----------------------------------
      Player Database System
@@ -146,7 +294,7 @@ Once you have opened the program you will see a menu for the Player Database Sys
 7. Exit Without Saving
 -----------------------------------
 Enter your selection: 
- ``` 
+```
 
 #### 1. Add a New Player
    This selection will enable you to start processing a player into the database, please have the following details ready;
@@ -228,3 +376,6 @@ The program is telling you that it can not find the player, if you are certain t
 "Team you are searching for is not in the list"
 The program is telling you that the team is not in the list, this could be that there are no allocated players to this team at present, or the players for this specific team have not been loaded into the system yet or have been allocated to another team. To check if the players are in the system, select menu option 3 and run full player list. Once you have the players FFA_id number you can change their team allocation.
 
+Algorithmic Walk through Trello Board
+
+![trello_board]()
