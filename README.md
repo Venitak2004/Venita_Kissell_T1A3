@@ -1,10 +1,5 @@
 # Player Database - Venita_Kissell_T1A3
-## R4 Link to Source Control Repository & Screenshot
-
-![autopep8](/docs/autopep8.png)
-
-
-
+## Link to Source Control Repository & Screenshot
 
 ## GitHub Repository
 Provide link to GitHub Repository
@@ -92,7 +87,7 @@ Rich
 
 Step 1 - Python
 Python is an essential download to run this Player Database program. To do this go to https://www.python.org/downloads/ and follow the download instructions from their website.
-![python](/docs/python_install.png)
+![python](/docs/python.png)
 
 Step 2 - Install Visual Studio Code
 Visual Studio Code is a text editor and is essential to run this program. Download and istall from the provided link below.
@@ -368,6 +363,8 @@ Comments should be complete sentences so it is easier for others to read your co
 With naming conventions function names should be lowercase as are Variables, but Classes begin with a capital letter.
 'Single Quotes' for small strings, and "Double Quotes" for strings that contain 'quotes'
 'self' is always the first argument.
+
+![autopep8](/docs/autopep8.png)
 ```
 Reference - 
 van Rossum, Guido, et al. “PEP 8 – Style Guide for Python Code.” Peps.python.org, 5 July 2001, peps.python.org/pep-0008/.
